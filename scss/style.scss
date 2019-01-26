@@ -2,6 +2,10 @@ $crismon-text-font: 'Crimson Text', serif;
 $dancing-script-font: 'Dancing Script', cursive;
 $comfortaa-font: 'Comfortaa', cursive;
 
+body{
+    font-family: $crismon-text-font;
+}
+
 .wrapper{
     overflow: hidden;
 }
@@ -63,6 +67,52 @@ nav{
     font-family: $dancing-script-font;
 }
 
+/* label focus color */
+ .input-field input:focus + label {
+   color: #eceff1 !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid #eceff1 !important;
+   box-shadow: 0 1px 0 0 #eceff1 !important
+ }
+ .input-field label{
+     color: #eceff1 !important;
+ }
+ /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #eceff1 !important;
+   }
+
+.login-btn{
+    width: 100%;
+}
+
+.login-content{
+    margin-top: 15%;
+}
+
+.card{
+    h2{
+        font-family: $dancing-script-font;
+    }
+}
+
+.headerline-1{
+    height: 5px; 
+    width: 200px; 
+    background-color: #fff;
+}
+
+.headerline-2{
+    margin-top: 5px; 
+    height: 5px; 
+    width: 300px; 
+    background-color: #fff;
+}
+
+// Media Queries
+
 @media screen and (min-width: 320px) and (max-width: 400px) {
     .main-content {
       margin-top: 43%;
@@ -73,6 +123,49 @@ nav{
     }
     .fa-graduation-cap{
         margin-top: 14%;
+    }
+
+    .ilearn{
+        font-size: 2rem;
+    }
+
+    .mov-frwd-text{
+        font-size: 1rem;
+    }
+
+    .headerline-1{
+    height: 2px; 
+    width: 95px; 
+    }
+
+    .headerline-2{
+    height: 2px; 
+    width: 117px; 
+    }
+
+    .login-content{
+        h2{
+            font-size: 130%;
+        }
+    }
+
+    .login-content{
+    margin-top: 44%;
+    }
+
+    .card-row{
+        margin-bottom: 0px !important;
+        .input-field{
+            margin-top: 0px !important;
+        }
+    }
+
+    .login-btn{
+        width: 100%;
+    }
+
+    .signup-para{
+        font-size: 12px;
     }
 }
 
@@ -87,15 +180,66 @@ nav{
     .fa-graduation-cap{
         margin-top: 14%;
     }
+        .ilearn{
+        font-size: 2rem;
+    }
+
+    .mov-frwd-text{
+        font-size: 1rem;
+    }
+
+    .headerline-1{
+    height: 2px; 
+    width: 95px; 
+    }
+
+    .headerline-2{
+    height: 2px; 
+    width: 117px; 
+    }
+
+    .login-content{
+        h2{
+            font-size: 130%;
+        }
+    }
+
+    .login-content{
+    margin-top: 44%;
+    }
+
+    .card-row{
+        margin-bottom: 0px !important;
+        .input-field{
+            margin-top: 0px !important;
+        }
+    }
+
+    .login-btn{
+        width: 100%;
+    }
+
+    .signup-para{
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width: 501px) and (max-width: 770px) {
     .main-content {
-      margin-top: 43%;
+      margin-top: 26%;
     }
     .ilearn-detailed{
     font-size: 26px !important; 
     margin-left: 0px;
+    }
+
+    .login-content{
+        margin-top: 26%;
+    }
+    .login-content{
+        h2{
+            font-size: 255%;
+        }
     }
 }
 
@@ -109,7 +253,7 @@ nav{
     }
     .ilearn-detailed{
     margin-left: 1%;
-}
+    }
 }
 
 @media screen and (min-width: 1200px) {

@@ -24,58 +24,96 @@
 <body>
 
     <div class="wrapper">
-    <!-- header -->
-    <section>
-        <header>
-            <nav class="transparent z-depth-0">
-                <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo ilearn ilearn-detailed"> <i class="fa fa-graduation-cap"></i>
-                        ILearn</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li class="active"><a href="#"><i class='fa fa-home'></i> Home</a></li>
-                        <li><a href="#"><i class='fa fa-info'></i> About</a></li>
-                        <li><a href="#"><i class='fa fa-users'></i> Team</a></li>
-                        <li><a href="#"><i class='fa fa-book'></i> Courses</a></li>
-                        <li><a href="#"><i class='fa fa-phone'></i> Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-            <ul class="sidenav pink lighten-5" id="mobile-demo">
-                <li class="active"><a href="#" class="grey-text text-darken-2"><i class='fa fa-home purple-text'></i>
-                        Home</a></li>
-                <li><a href="#" class="grey-text text-darken-2"><i class='fa fa-info purple-text'></i> About</a></li>
-                <li><a href="#" class="grey-text text-darken-2"><i class='fa fa-users purple-text'></i> Team</a></li>
-                <li><a href="#" class="grey-text text-darken-2"><i class='fa fa-book purple-text'></i> Courses</a></li>
-                <li><a href="#" class="grey-text text-darken-2"><i class='fa fa-phone purple-text'></i> Contact</a></li>
-            </ul>
-        </header>
-    </section>
-
-    <!-- Home section -->
-    <section id='home'>
-        <div id='overlay'>
-            <div class='container'>
-                <div class='row'>
-                    <div class='col l6 m6 main-content'>
-                        <h1 class='ilearn'>ILearn</h1>
-                        <div style="height: 5px; width: 200px; background-color: #fff;">
-                        </div>
-                        <div style="margin-top: 5px; height: 5px; width: 300px; background-color: #fff;">
-                        </div>
-                        <h2 class="mov-frwd-text">
-                            <span>"</span> Moving forward <span>"</span>
-                        </h2>
+        <!-- header -->
+        <section>
+            <header>
+                <nav class="transparent z-depth-0">
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo ilearn ilearn-detailed"> <i class="fa fa-graduation-cap"></i>
+                            ILearn</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li class="active"><a href="#"><i class='fa fa-home'></i> Home</a></li>
+                            <li><a href="#"><i class='fa fa-info'></i> About</a></li>
+                            <li><a href="#"><i class='fa fa-users'></i> Team</a></li>
+                            <li><a href="#"><i class='fa fa-book'></i> Courses</a></li>
+                            <li><a href="#"><i class='fa fa-phone'></i> Contact</a></li>
+                        </ul>
                     </div>
-                    <div class='col l6 m6 main-content'>
+                </nav>
 
+                <ul class="sidenav pink lighten-5" id="mobile-demo">
+                    <li class="active"><a href="#" class="grey-text text-darken-2"><i class='fa fa-home purple-text'></i>
+                            Home</a></li>
+                    <li><a href="#" class="grey-text text-darken-2"><i class='fa fa-info purple-text'></i> About</a></li>
+                    <li><a href="#" class="grey-text text-darken-2"><i class='fa fa-users purple-text'></i> Team</a></li>
+                    <li><a href="#" class="grey-text text-darken-2"><i class='fa fa-book purple-text'></i> Courses</a></li>
+                    <li><a href="#" class="grey-text text-darken-2"><i class='fa fa-phone purple-text'></i> Contact</a></li>
+                </ul>
+            </header>
+        </section>
+
+        <!-- Home section -->
+        <section id='home'>
+            <div id='overlay'>
+                <div class='container'>
+                    <div class='row'>
+                        <div class='col l6 m6 s5 main-content'>
+                            <h1 class='ilearn'>ILearn</h1>
+                            <div class="headerline-1">
+                            </div>
+                            <div class="headerline-2">
+                            </div>
+                            <h2 class="mov-frwd-text">
+                                <span>"</span> Moving forward <span>"</span>
+                            </h2>
+                        </div>
+                        <!-- Login form -->
+                        <div class='col l6 m6 s7 login-content'>
+                            <div class="card transparent z-depth-5">
+                                <div class="row card-row">
+                                    <div class="col s2 m2 l2"></div>
+                                    <form class="col s9 m8 l8">
+                                        <div class="row card-row">
+                                            <div class="col s12">
+                                                <h2 class='center-align white-text gettingStarted-text'>Getting Started</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row card-row">
+                                            <div class="input-field col s12">
+                                                <input id="input_text" type="email">
+                                                <label for="input_text">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="row card-row">
+                                            <div class="input-field col s12">
+                                                <input id="password" type="password" class="validate">
+                                                <label for="password">Password</label>
+                                            </div>
+                                        </div>
+                                        <div class="row card-row">
+                                            <div class="input_field col s12">
+                                                <button class="waves-effect white black-text waves-light btn btn-small login-btn">
+                                                    <i class="fa fa-user"></i> Login </button>
+                                            </div>
+                                        </div>
+                                        <div class="row card-row">
+                                            <div class="col s12">
+                                                <p class='center-align signup-para'>
+                                                    Don't have an Account? <a href="#" class="white-text" style="text-decoration:underline;">Signup Here</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="col s2 m2 l2"></div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
     </div>
 
 </body>
