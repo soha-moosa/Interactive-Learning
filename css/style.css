@@ -1,0 +1,303 @@
+body {
+  font-family: "Montserrat", sans-serif; }
+
+.wrapper {
+  overflow: hidden; }
+
+#home {
+  background: url("../images/trianglify.png") no-repeat fixed center;
+  height: auto;
+  color: #ffff;
+  background-size: cover;
+  margin-top: -106px; }
+  #home #overlay {
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+#__container {
+  margin-bottom: 0px;
+  padding-top: 15%; }
+
+nav ul li {
+  margin-left: 1rem; }
+  nav ul li a {
+    font-size: 10px !important;
+    font-family: "Comfortaa", cursive; }
+    nav ul li a i {
+      font-size: inherit; }
+
+.sidenav {
+  background-color: purple !important; }
+  .sidenav li a {
+    font-size: 14px !important;
+    font-family: "Comfortaa", cursive; }
+    .sidenav li a i {
+      font-size: inherit; }
+
+.ilearn {
+  font-family: "Montserrat", sans-serif; }
+
+.ilearn-detailed {
+  font-size: 30px;
+  margin-left: 1%; }
+
+.mov-frwd-text {
+  font-size: 2.5rem;
+  font-family: "Dancing Script", cursive; }
+
+/* label focus color */
+.input-field input:focus + label {
+  color: #eceff1 !important; }
+
+.input-field textarea:focus + label {
+  color: #eceff1 !important; }
+
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #eceff1 !important;
+  box-shadow: 0 1px 0 0 #eceff1 !important; }
+
+.row .input-field textarea:focus {
+  border-bottom: 1px solid #eceff1 !important;
+  box-shadow: 0 1px 0 0 #eceff1 !important; }
+
+.input-field label {
+  color: #eceff1 !important; }
+
+/* label focus color */
+.input-field input[type='text']:focus + label {
+  color: #eceff1 !important; }
+
+.card h2 {
+  font-family: "Dancing Script", cursive; }
+
+.headerline-1 {
+  height: 5px;
+  width: 200px;
+  background-color: #fff; }
+
+.headerline-2 {
+  margin-top: 5px;
+  height: 5px;
+  width: 300px;
+  background-color: #fff; }
+
+.div-background {
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+.imageStyles {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: 9px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px 100px;
+  margin-top: -70px;
+  border: 3px solid black; }
+
+.team-cards {
+  margin-top: 10%; }
+
+.course-image {
+  margin-left: 25%;
+  height: 255px;
+  width: 255px; }
+
+.login-btn {
+  width: 100%; }
+
+footer .footer-icon {
+  margin-right: .5rem; }
+footer .footer-link-1 {
+  position: relative;
+  top: 10px; }
+footer .footer-link-2 {
+  position: relative;
+  top: 47px; }
+footer .footer-link-3 {
+  position: relative;
+  top: 84px; }
+footer .footer-link-4 {
+  position: relative;
+  top: 117px; }
+footer .footer-link-5 {
+  position: relative;
+  top: 149px; }
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  #__container {
+    padding-top: 49%; }
+
+  .ilearn-detailed {
+    font-size: 26px !important;
+    margin-left: 0px; }
+
+  .fa-graduation-cap {
+    margin-top: 14%; }
+
+  .ilearn {
+    font-size: 2rem; }
+
+  .mov-frwd-text {
+    font-size: 1rem; }
+
+  .headerline-1 {
+    height: 2px;
+    width: 95px; }
+
+  .headerline-2 {
+    height: 2px;
+    width: 117px; }
+
+  .gettingStarted-text {
+    font-size: 130%; }
+
+  .card-row {
+    margin-bottom: 0px !important; }
+    .card-row .input-field {
+      margin-top: 0px !important; }
+
+  .login-btn {
+    width: 100%; }
+
+  .signup-para {
+    font-size: 12px; }
+
+  .div-background h4 {
+    font-size: 20px; }
+
+  .res-cards {
+    margin: 57px 0 0 0; }
+
+  .course-image {
+    margin-left: 11%; }
+
+  .course-header {
+    position: relative;
+    top: 16px; } }
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  #__container {
+    padding-top: 30%; }
+
+  .ilearn-detailed {
+    font-size: 26px !important;
+    margin-left: 0px; }
+
+  .fa-graduation-cap {
+    margin-top: 14%; }
+
+  .ilearn {
+    font-size: 2rem; }
+
+  .mov-frwd-text {
+    font-size: 1rem; }
+
+  .headerline-1 {
+    height: 2px;
+    width: 95px; }
+
+  .headerline-2 {
+    height: 2px;
+    width: 117px; }
+
+  .gettingStarted-text {
+    font-size: 130%; }
+
+  .card-row {
+    margin-bottom: 0px !important; }
+    .card-row .input-field {
+      margin-top: 0px !important; }
+
+  .login-btn {
+    width: 100%; }
+
+  .signup-para {
+    font-size: 12px; }
+
+  .div-background h4 {
+    font-size: 20px; }
+
+  .res-cards {
+    margin: 57px 0 0 0; }
+
+  .course-image {
+    margin-left: 16%; }
+
+  .course-header {
+    position: relative;
+    top: 16px; } }
+@media screen and (min-width: 501px) and (max-width: 770px) {
+  #__container {
+    padding-top: 21%; }
+
+  .ilearn-detailed {
+    font-size: 26px !important;
+    margin-left: 0px; }
+
+  .login-content {
+    margin-top: 26%; }
+
+  .gettingStarted-text {
+    font-size: 255%; }
+
+  .res-cards {
+    margin: 30px 0 0 0; }
+
+  .course-image {
+    margin-left: 0px;
+    height: 229px;
+    width: 229px; }
+
+  .course-header {
+    position: relative;
+    top: 16px; } }
+@media screen and (min-width: 771px) and (max-width: 1050px) {
+  .main-content {
+    margin-top: 26%; }
+
+  .ilearn-detailed {
+    font-size: 26px !important;
+    margin-left: 0px; }
+
+  .ilearn-detailed {
+    margin-left: 1%; }
+
+  .course-image {
+    margin-left: 16%;
+    height: 229px;
+    width: 229px; }
+
+  .course-header {
+    position: relative;
+    top: 16px; } }
+
+/*# sourceMappingURL=style.css.map */
