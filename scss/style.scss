@@ -2,315 +2,309 @@ $crismon-text-font: 'Crimson Text', serif;
 $dancing-script-font: 'Dancing Script', cursive;
 $comfortaa-font: 'Comfortaa', cursive;
 
-body{
-    font-family: $crismon-text-font;
+body {
+  font-family: $crismon-text-font;
 }
 
-.wrapper{
-    overflow: hidden;
+.wrapper {
+  overflow: hidden;
 }
 
 #home {
   background: url('../images/trianglify.png') no-repeat fixed center;
-  height: 100vh;
+  height: auto;
   color: #ffff;
   background-size: cover;
   margin-top: -106px;
-}
-#overlay {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.main-content {
-  margin-top: 10%;
-}
-
-nav{
-   ul{
-       li{
-        margin-left: 1rem;
-        a{
-            font-size: 10px !important;
-            font-family: $comfortaa-font;
-            i{
-                font-size: inherit;
-            }
-        }
-        }
-    } 
+  #overlay {
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
   }
+}
 
-.sidenav{
-    background-color: purple !important;
-    li{
-        a{
-            font-size: 14px !important;
-            font-family: $comfortaa-font;
-            i{
-                font-size: inherit;
-            }
+#__container {
+  margin-bottom: 0px;
+  padding-top: 10%;
+}
+
+nav {
+  ul {
+    li {
+      margin-left: 1rem;
+      a {
+        font-size: 10px !important;
+        font-family: $comfortaa-font;
+        i {
+          font-size: inherit;
         }
+      }
     }
+  }
 }
 
-.ilearn{
- font-family: $crismon-text-font;
+.sidenav {
+  background-color: purple !important;
+  li {
+    a {
+      font-size: 14px !important;
+      font-family: $comfortaa-font;
+      i {
+        font-size: inherit;
+      }
+    }
+  }
 }
 
-.ilearn-detailed{
-    font-size: 30px; 
-    margin-left: 1%;
+.ilearn {
+  font-family: $crismon-text-font;
 }
 
-.mov-frwd-text{
-    font-size: 2.5rem;
-    font-family: $dancing-script-font;
+.ilearn-detailed {
+  font-size: 30px;
+  margin-left: 1%;
+}
+
+.mov-frwd-text {
+  font-size: 2.5rem;
+  font-family: $dancing-script-font;
 }
 
 /* label focus color */
- .input-field input:focus + label {
-   color: #eceff1 !important;
- }
- /* label underline focus color */
- .row .input-field input:focus {
-   border-bottom: 1px solid #eceff1 !important;
-   box-shadow: 0 1px 0 0 #eceff1 !important
- }
- .input-field label{
-     color: #eceff1 !important;
- }
- /* label focus color */
-   .input-field input[type=text]:focus + label {
-     color: #eceff1 !important;
-   }
-
-.login-btn{
-    width: 100%;
+.input-field input:focus + label {
+  color: #eceff1 !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #eceff1 !important;
+  box-shadow: 0 1px 0 0 #eceff1 !important;
+}
+.input-field label {
+  color: #eceff1 !important;
+}
+/* label focus color */
+.input-field input[type='text']:focus + label {
+  color: #eceff1 !important;
 }
 
-.login-content{
-    margin-top: 15%;
+.card {
+  h2 {
+    font-family: $dancing-script-font;
+  }
 }
 
-.card{
-    h2{
-        font-family: $dancing-script-font;
-    }
+.headerline-1 {
+  height: 5px;
+  width: 200px;
+  background-color: #fff;
 }
 
-.headerline-1{
-    height: 5px; 
-    width: 200px; 
-    background-color: #fff;
+.headerline-2 {
+  margin-top: 5px;
+  height: 5px;
+  width: 300px;
+  background-color: #fff;
 }
 
-.headerline-2{
-    margin-top: 5px; 
-    height: 5px; 
-    width: 300px; 
-    background-color: #fff;
-}
-
-.div-background{
-	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-    padding-top: 5%;
-    padding-bottom: 5%;
+.div-background {
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 // Media Queries
 
 @media screen and (min-width: 320px) and (max-width: 400px) {
-    .main-content {
-      margin-top: 43%;
-    }
-    .ilearn-detailed{
-    font-size: 26px !important; 
+  .main-content {
+    margin-top: 43%;
+  }
+  .ilearn-detailed {
+    font-size: 26px !important;
     margin-left: 0px;
-    }
-    .fa-graduation-cap{
-        margin-top: 14%;
-    }
+  }
+  .fa-graduation-cap {
+    margin-top: 14%;
+  }
 
-    .ilearn{
-        font-size: 2rem;
-    }
+  .ilearn {
+    font-size: 2rem;
+  }
 
-    .mov-frwd-text{
-        font-size: 1rem;
-    }
+  .mov-frwd-text {
+    font-size: 1rem;
+  }
 
-    .headerline-1{
-    height: 2px; 
-    width: 95px; 
-    }
+  .headerline-1 {
+    height: 2px;
+    width: 95px;
+  }
 
-    .headerline-2{
-    height: 2px; 
-    width: 117px; 
-    }
+  .headerline-2 {
+    height: 2px;
+    width: 117px;
+  }
 
-    .login-content{
-        h2{
-            font-size: 130%;
-        }
+  .login-content {
+    h2 {
+      font-size: 130%;
     }
+  }
 
-    .login-content{
+  .login-content {
     margin-top: 44%;
-    }
+  }
 
-    .card-row{
-        margin-bottom: 0px !important;
-        .input-field{
-            margin-top: 0px !important;
-        }
+  .card-row {
+    margin-bottom: 0px !important;
+    .input-field {
+      margin-top: 0px !important;
     }
+  }
 
-    .login-btn{
-        width: 100%;
-    }
+  .login-btn {
+    width: 100%;
+  }
 
-    .signup-para{
-        font-size: 12px;
+  .signup-para {
+    font-size: 12px;
+  }
+  .div-background {
+    h4 {
+      font-size: 20px;
     }
-    .div-background{
-        h4{
-            font-size: 20px;
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 500px) {
-    .main-content {
-      margin-top: 43%;
-    }
-    .ilearn-detailed{
-    font-size: 26px !important; 
+  .main-content {
+    margin-top: 43%;
+  }
+  .ilearn-detailed {
+    font-size: 26px !important;
     margin-left: 0px;
-    }
-    .fa-graduation-cap{
-        margin-top: 14%;
-    }
-        .ilearn{
-        font-size: 2rem;
-    }
+  }
+  .fa-graduation-cap {
+    margin-top: 14%;
+  }
+  .ilearn {
+    font-size: 2rem;
+  }
 
-    .mov-frwd-text{
-        font-size: 1rem;
-    }
+  .mov-frwd-text {
+    font-size: 1rem;
+  }
 
-    .headerline-1{
-    height: 2px; 
-    width: 95px; 
-    }
+  .headerline-1 {
+    height: 2px;
+    width: 95px;
+  }
 
-    .headerline-2{
-    height: 2px; 
-    width: 117px; 
-    }
+  .headerline-2 {
+    height: 2px;
+    width: 117px;
+  }
 
-    .login-content{
-        h2{
-            font-size: 130%;
-        }
+  .login-content {
+    h2 {
+      font-size: 130%;
     }
+  }
 
-    .login-content{
+  .login-content {
     margin-top: 44%;
-    }
+  }
 
-    .card-row{
-        margin-bottom: 0px !important;
-        .input-field{
-            margin-top: 0px !important;
-        }
+  .card-row {
+    margin-bottom: 0px !important;
+    .input-field {
+      margin-top: 0px !important;
     }
+  }
 
-    .login-btn{
-        width: 100%;
-    }
+  .login-btn {
+    width: 100%;
+  }
 
-    .signup-para{
-        font-size: 12px;
+  .signup-para {
+    font-size: 12px;
+  }
+  .div-background {
+    h4 {
+      font-size: 20px;
     }
-    .div-background{
-        h4{
-            font-size: 20px;
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 770px) {
-    .main-content {
-      margin-top: 26%;
-    }
-    .ilearn-detailed{
-    font-size: 26px !important; 
+  .main-content {
+    margin-top: 26%;
+  }
+  .ilearn-detailed {
+    font-size: 26px !important;
     margin-left: 0px;
-    }
+  }
 
-    .login-content{
-        margin-top: 26%;
+  .login-content {
+    margin-top: 26%;
+  }
+  .login-content {
+    h2 {
+      font-size: 255%;
     }
-    .login-content{
-        h2{
-            font-size: 255%;
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 771px) and (max-width: 1050px) {
-    .main-content {
-      margin-top: 26%;
-    }
-    .ilearn-detailed{
-    font-size: 26px !important; 
+  .main-content {
+    margin-top: 26%;
+  }
+  .ilearn-detailed {
+    font-size: 26px !important;
     margin-left: 0px;
-    }
-    .ilearn-detailed{
+  }
+  .ilearn-detailed {
     margin-left: 1%;
-    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
