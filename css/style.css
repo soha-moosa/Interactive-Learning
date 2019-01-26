@@ -49,8 +49,15 @@ nav ul li {
 .input-field input:focus + label {
   color: #eceff1 !important; }
 
+.input-field textarea:focus + label {
+  color: #eceff1 !important; }
+
 /* label underline focus color */
 .row .input-field input:focus {
+  border-bottom: 1px solid #eceff1 !important;
+  box-shadow: 0 1px 0 0 #eceff1 !important; }
+
+.row .input-field textarea:focus {
   border-bottom: 1px solid #eceff1 !important;
   box-shadow: 0 1px 0 0 #eceff1 !important; }
 
@@ -127,6 +134,24 @@ nav ul li {
 
 .login-btn {
   width: 100%; }
+
+footer .footer-icon {
+  margin-right: .5rem; }
+footer .footer-link-1 {
+  position: relative;
+  top: 10px; }
+footer .footer-link-2 {
+  position: relative;
+  top: 47px; }
+footer .footer-link-3 {
+  position: relative;
+  top: 84px; }
+footer .footer-link-4 {
+  position: relative;
+  top: 117px; }
+footer .footer-link-5 {
+  position: relative;
+  top: 149px; }
 
 @media screen and (min-width: 320px) and (max-width: 400px) {
   #__container {
