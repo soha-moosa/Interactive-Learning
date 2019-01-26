@@ -16,7 +16,7 @@ body {
 
 #__container {
   margin-bottom: 0px;
-  padding-top: 10%; }
+  padding-top: 15%; }
 
 nav ul li {
   margin-left: 1rem; }
@@ -107,8 +107,8 @@ nav ul li {
   100% {
     background-position: 0% 50%; } }
 @media screen and (min-width: 320px) and (max-width: 400px) {
-  .main-content {
-    margin-top: 43%; }
+  #__container {
+    padding-top: 49%; }
 
   .ilearn-detailed {
     font-size: 26px !important;
@@ -131,11 +131,8 @@ nav ul li {
     height: 2px;
     width: 117px; }
 
-  .login-content h2 {
+  .gettingStarted-text {
     font-size: 130%; }
-
-  .login-content {
-    margin-top: 44%; }
 
   .card-row {
     margin-bottom: 0px !important; }
@@ -151,8 +148,8 @@ nav ul li {
   .div-background h4 {
     font-size: 20px; } }
 @media screen and (min-width: 401px) and (max-width: 500px) {
-  .main-content {
-    margin-top: 43%; }
+  #__container {
+    padding-top: 30%; }
 
   .ilearn-detailed {
     font-size: 26px !important;
@@ -175,11 +172,8 @@ nav ul li {
     height: 2px;
     width: 117px; }
 
-  .login-content h2 {
+  .gettingStarted-text {
     font-size: 130%; }
-
-  .login-content {
-    margin-top: 44%; }
 
   .card-row {
     margin-bottom: 0px !important; }
@@ -195,8 +189,8 @@ nav ul li {
   .div-background h4 {
     font-size: 20px; } }
 @media screen and (min-width: 501px) and (max-width: 770px) {
-  .main-content {
-    margin-top: 26%; }
+  #__container {
+    padding-top: 21%; }
 
   .ilearn-detailed {
     font-size: 26px !important;
@@ -205,7 +199,7 @@ nav ul li {
   .login-content {
     margin-top: 26%; }
 
-  .login-content h2 {
+  .gettingStarted-text {
     font-size: 255%; } }
 @media screen and (min-width: 771px) and (max-width: 1050px) {
   .main-content {
