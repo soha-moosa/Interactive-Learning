@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-
 const Schema = mongoose.Schema
 
 const Student = new Schema({
@@ -15,7 +14,10 @@ const Student = new Schema({
   },
   gender: String,
   age: Number,
-  instituteName: String
+  instituteName: String,
+  courses: {
+    type: Array
+  }
 })
 
 module.exports = new mongoose.model('Student', Student)

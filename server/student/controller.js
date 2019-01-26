@@ -33,7 +33,37 @@ const loginStudent = (req, res) => {
       })
     })
 }
+
+const registerCourseForMe = (req, res) => {
+  const { student_id } = req.params
+  const course = req.body
+
+  Student.findByIdAndUpdate(
+    {
+      _id: student_id
+    },
+    {
+      $push: {
+        courses: course
+      }
+    },
+    {
+      new: true
+    }
+  )
+    .then(student => {
+      res.status(200).send({
+        ...student._doc
+      })
+    })
+    .catch(err => {
+      res.status(500).send({
+        err
+      })
+    })
+}
 module.exports = {
   registerStudent,
-  loginStudent
+  loginStudent,
+  registerCourseForMe
 }
