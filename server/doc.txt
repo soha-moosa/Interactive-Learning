@@ -1,0 +1,39 @@
+ENTITIES
+1 - COURSE
+2 - STUDENT
+
+REST API END POINTS 
+
+1 - STUDENT LOGIN 
+2 - STUDENT REGISTRATION
+4 - COURSE REGISTRATION RESPECTIVE TO USER 
+5 - LOCK THE COURSE
+6 - UPDATE PROGRESS
+7 - 
+
+
+
+
+// ============= fLOW =====================
+
+
+* Main Page => Same as react one
+
+* After login => One page considering all courses card and asking ' Take this course'
+
+* After clicking on take this couse = > redirect to new page where in cards different
+  Code Material will be defined as header
+
+* User can not go to body tag CARD before passing the HTML tag card step wise step. 
+  Everything will be locked as solo learn
+
+* on the course section where it will be written to take the course => If user will pass some levels 
+  then percentage bar will work according to it also in the course section where html tag 
+  body tag etc will be present there will be the same percentage bar for the user
+
+* on passing all levels step wise step user will see his final results at the end
+
+* thats all course done. Second step is forrum if there will be time then we will do this 
+  otherwise above part is enough as we are out of time
+
+
