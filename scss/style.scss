@@ -111,6 +111,53 @@ nav{
     background-color: #fff;
 }
 
+.div-background{
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 // Media Queries
 
 @media screen and (min-width: 320px) and (max-width: 400px) {
@@ -167,6 +214,11 @@ nav{
     .signup-para{
         font-size: 12px;
     }
+    .div-background{
+        h4{
+            font-size: 20px;
+        }
+    }
 }
 
 @media screen and (min-width: 401px) and (max-width: 500px) {
@@ -222,6 +274,11 @@ nav{
     .signup-para{
         font-size: 12px;
     }
+    .div-background{
+        h4{
+            font-size: 20px;
+        }
+    }
 }
 
 @media screen and (min-width: 501px) and (max-width: 770px) {
@@ -245,7 +302,7 @@ nav{
 
 @media screen and (min-width: 771px) and (max-width: 1050px) {
     .main-content {
-      margin-top: 43%;
+      margin-top: 26%;
     }
     .ilearn-detailed{
     font-size: 26px !important; 
