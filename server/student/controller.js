@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const Student = require('./model')
 
 function registerStudent(req, res) {
@@ -5,9 +6,15 @@ function registerStudent(req, res) {
   student
     .save()
     .then(student => {
-      res.status(200).send({
-        ...student._doc
-      })
+      if (_.isEmpty(student)) {
+        res.status(404).send({
+          message: 'Some error occured!'
+        })
+      } else {
+        res.status(200).send({
+          ...student._doc
+        })
+      }
     })
     .catch(err => {
       res.status(500).send({
@@ -23,9 +30,15 @@ const loginStudent = (req, res) => {
     password
   })
     .then(student => {
-      res.status(200).send({
-        ...student._doc
-      })
+      if (_.isEmpty(student)) {
+        res.status(404).send({
+          message: 'No user found!'
+        })
+      } else {
+        res.status(200).send({
+          ...student._doc
+        })
+      }
     })
     .catch(err => {
       res.status(500).send({
