@@ -48,19 +48,19 @@
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul class="right hide-on-med-and-down">
                             <li class="active">
-                                <a href="#"><i class="fa fa-home"></i> Home</a>
+                                <a href="#home" class="scroll"><i class="fa fa-home"></i> Home</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-info"></i> About</a>
+                                <a href="#about" class="scroll"><i class="fa fa-info"></i> About</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-users"></i> Team</a>
+                                <a href="#team" class="scroll"><i class="fa fa-users"></i> Team</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-book"></i> Courses</a>
+                                <a href="#courses" class="scroll"><i class="fa fa-book"></i> Courses</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-phone"></i> Contact</a>
+                                <a href="#contact" class="scroll"><i class="fa fa-phone"></i> Contact</a>
                             </li>
                             <li>
                                 <a href="./html/signup.html"><i class="fa fa-sign-out-alt"></i> Signup</a>
@@ -157,7 +157,7 @@
         </section>
 
         <!-- Vision Section -->
-        <section>
+        <section class="about">
             <div class="div-background">
                 <div class="container">
                     <h4 class="center-align">
@@ -175,7 +175,7 @@
         </section>
 
         <!-- Team Section -->
-        <section>
+        <section id="team">
             <div class="div-background">
                 <div class="container" style="padding-top: 3rem; margin-bottom: 3rem;">
                     <h2 class="center-align">Our Team</h2>
@@ -244,7 +244,7 @@
         </section>
 
         <!-- Courses Section -->
-        <section>
+        <section id="courses">
             <div class="div-background">
                 <div class="row">
                     <div class="col s12 m4 l4">
@@ -346,7 +346,7 @@
         </section>
 
         <!-- Footer -->
-        <section>
+        <section id="contact">
             <footer class="page-footer pink lighten-2">
                 <div class="row">
                     <div class="col l2 s12"></div>
@@ -400,6 +400,37 @@
     $(document).ready(function () {
         $('.sidenav').sidenav()
     })
+
+    $(document).ready(function () {
+
+        var scrollLink = $('.scroll');
+
+        // Smooth scrolling
+        scrollLink.click(function (e) {
+            e.preventDefault();
+            $('body,html').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+
+        // Active link switching
+        $(window).scroll(function () {
+            var scrollbarLocation = $(this).scrollTop();
+
+            scrollLink.each(function () {
+
+                var sectionOffset = $(this.hash).offset().top - 20;
+
+                if (sectionOffset <= scrollbarLocation) {
+                    $(this).parent().addClass('active');
+                    $(this).parent().siblings().removeClass('active');
+                }
+            })
+
+        })
+
+    })
+
 </script>
 
 </html>
