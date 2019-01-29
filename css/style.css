@@ -138,6 +138,13 @@ nav ul li {
 footer .footer-icon {
   margin-right: .5rem; }
 
+.color {
+  background-color: #00bcd4 !important; }
+  .color .brand-logo {
+    color: white !important; }
+  .color ul li a {
+    color: white !important; }
+
 @media screen and (min-width: 320px) and (max-width: 400px) {
   #__container {
     padding-top: 49%; }

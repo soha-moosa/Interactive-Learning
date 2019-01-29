@@ -192,6 +192,20 @@ footer{
  }
 }
 
+.color {
+  background-color: #00bcd4 !important;
+  .brand-logo{
+      color: white !important;
+  }
+  ul{
+      li{
+          a{
+              color: white !important;
+          }
+      }
+  }
+}
+
 // Media Queries
 
 @media screen and (min-width: 320px) and (max-width: 400px) {
