@@ -1,5 +1,5 @@
 body {
-  font-family: "Crimson Text", serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .wrapper {
   overflow: hidden; }
@@ -16,7 +16,7 @@ body {
 
 #__container {
   margin-bottom: 0px;
-  padding-top: 10%; }
+  padding-top: 15%; }
 
 nav ul li {
   margin-left: 1rem; }
@@ -35,7 +35,7 @@ nav ul li {
       font-size: inherit; }
 
 .ilearn {
-  font-family: "Crimson Text", serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .ilearn-detailed {
   font-size: 30px;
@@ -49,8 +49,15 @@ nav ul li {
 .input-field input:focus + label {
   color: #eceff1 !important; }
 
+.input-field textarea:focus + label {
+  color: #eceff1 !important; }
+
 /* label underline focus color */
 .row .input-field input:focus {
+  border-bottom: 1px solid #eceff1 !important;
+  box-shadow: 0 1px 0 0 #eceff1 !important; }
+
+.row .input-field textarea:focus {
   border-bottom: 1px solid #eceff1 !important;
   box-shadow: 0 1px 0 0 #eceff1 !important; }
 
@@ -106,9 +113,49 @@ nav ul li {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+.imageStyles {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: 9px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px 100px;
+  margin-top: -70px;
+  border: 3px solid black; }
+
+.team-cards {
+  margin-top: 10%; }
+
+.course-image {
+  margin-left: 25%;
+  height: 255px;
+  width: 255px; }
+
+.login-btn {
+  width: 100%; }
+
+footer .footer-icon {
+  margin-right: .5rem; }
+footer .footer-link-1 {
+  position: relative;
+  top: 10px; }
+footer .footer-link-2 {
+  position: relative;
+  top: 47px; }
+footer .footer-link-3 {
+  position: relative;
+  top: 84px; }
+footer .footer-link-4 {
+  position: relative;
+  top: 117px; }
+footer .footer-link-5 {
+  position: relative;
+  top: 149px; }
+
 @media screen and (min-width: 320px) and (max-width: 400px) {
-  .main-content {
-    margin-top: 43%; }
+  #__container {
+    padding-top: 49%; }
 
   .ilearn-detailed {
     font-size: 26px !important;
@@ -131,11 +178,8 @@ nav ul li {
     height: 2px;
     width: 117px; }
 
-  .login-content h2 {
+  .gettingStarted-text {
     font-size: 130%; }
-
-  .login-content {
-    margin-top: 44%; }
 
   .card-row {
     margin-bottom: 0px !important; }
@@ -149,10 +193,20 @@ nav ul li {
     font-size: 12px; }
 
   .div-background h4 {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .res-cards {
+    margin: 57px 0 0 0; }
+
+  .course-image {
+    margin-left: 11%; }
+
+  .course-header {
+    position: relative;
+    top: 16px; } }
 @media screen and (min-width: 401px) and (max-width: 500px) {
-  .main-content {
-    margin-top: 43%; }
+  #__container {
+    padding-top: 30%; }
 
   .ilearn-detailed {
     font-size: 26px !important;
@@ -175,11 +229,8 @@ nav ul li {
     height: 2px;
     width: 117px; }
 
-  .login-content h2 {
+  .gettingStarted-text {
     font-size: 130%; }
-
-  .login-content {
-    margin-top: 44%; }
 
   .card-row {
     margin-bottom: 0px !important; }
@@ -193,10 +244,20 @@ nav ul li {
     font-size: 12px; }
 
   .div-background h4 {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .res-cards {
+    margin: 57px 0 0 0; }
+
+  .course-image {
+    margin-left: 16%; }
+
+  .course-header {
+    position: relative;
+    top: 16px; } }
 @media screen and (min-width: 501px) and (max-width: 770px) {
-  .main-content {
-    margin-top: 26%; }
+  #__container {
+    padding-top: 21%; }
 
   .ilearn-detailed {
     font-size: 26px !important;
@@ -205,8 +266,20 @@ nav ul li {
   .login-content {
     margin-top: 26%; }
 
-  .login-content h2 {
-    font-size: 255%; } }
+  .gettingStarted-text {
+    font-size: 255%; }
+
+  .res-cards {
+    margin: 30px 0 0 0; }
+
+  .course-image {
+    margin-left: 0px;
+    height: 229px;
+    width: 229px; }
+
+  .course-header {
+    position: relative;
+    top: 16px; } }
 @media screen and (min-width: 771px) and (max-width: 1050px) {
   .main-content {
     margin-top: 26%; }
@@ -216,6 +289,15 @@ nav ul li {
     margin-left: 0px; }
 
   .ilearn-detailed {
-    margin-left: 1%; } }
+    margin-left: 1%; }
+
+  .course-image {
+    margin-left: 16%;
+    height: 229px;
+    width: 229px; }
+
+  .course-header {
+    position: relative;
+    top: 16px; } }
 
 /*# sourceMappingURL=style.css.map */

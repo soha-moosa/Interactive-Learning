@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -8,203 +9,356 @@
     <title>Interactive Learning</title>
 
     <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <!-- Materialize icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Font awesome  -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous" />
     <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Crimson+Text"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Dancing+Script"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Comfortaa"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
 
-  <body>
+<body>
     <div class="wrapper">
-      <!-- header -->
-      <section>
-        <header>
-          <nav class="transparent z-depth-0">
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo ilearn ilearn-detailed">
-                <i class="fa fa-graduation-cap"></i> ILearn</a
-              >
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-                ><i class="material-icons">menu</i></a
-              >
-              <ul class="right hide-on-med-and-down">
-                <li class="active">
-                  <a href="#"><i class="fa fa-home"></i> Home</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-info"></i> About</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-users"></i> Team</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-book"></i> Courses</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-phone"></i> Contact</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+        <!-- header -->
+        <section>
+            <header>
+                <nav class="transparent z-depth-0">
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo ilearn ilearn-detailed">
+                            <i class="fa fa-graduation-cap"></i> ILearn</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li class="active">
+                                <a href="#"><i class="fa fa-home"></i> Home</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-info"></i> About</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-users"></i> Team</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-book"></i> Courses</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-phone"></i> Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 
-          <ul class="sidenav pink lighten-5" id="mobile-demo">
-            <li class="active">
-              <a href="#" class="grey-text text-darken-2"
-                ><i class="fa fa-home purple-text"></i> Home</a
-              >
-            </li>
-            <li>
-              <a href="#" class="grey-text text-darken-2"
-                ><i class="fa fa-info purple-text"></i> About</a
-              >
-            </li>
-            <li>
-              <a href="#" class="grey-text text-darken-2"
-                ><i class="fa fa-users purple-text"></i> Team</a
-              >
-            </li>
-            <li>
-              <a href="#" class="grey-text text-darken-2"
-                ><i class="fa fa-book purple-text"></i> Courses</a
-              >
-            </li>
-            <li>
-              <a href="#" class="grey-text text-darken-2"
-                ><i class="fa fa-phone purple-text"></i> Contact</a
-              >
-            </li>
-          </ul>
-        </header>
-      </section>
+                <ul class="sidenav pink lighten-5" id="mobile-demo">
+                    <li class="active">
+                        <a href="#" class="grey-text text-darken-2"><i class="fa fa-home purple-text"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="grey-text text-darken-2"><i class="fa fa-info purple-text"></i> About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="grey-text text-darken-2"><i class="fa fa-users purple-text"></i> Team</a>
+                    </li>
+                    <li>
+                        <a href="#" class="grey-text text-darken-2"><i class="fa fa-book purple-text"></i> Courses</a>
+                    </li>
+                    <li>
+                        <a href="#" class="grey-text text-darken-2"><i class="fa fa-phone purple-text"></i> Contact</a>
+                    </li>
+                </ul>
+            </header>
+        </section>
 
-      <!-- Home section -->
-      <section id="home">
-        <div id="overlay">
-          <div class="container">
-            <div class="row" id="__container">
-              <div class="col l6 m6 s5">
-                <h1 class="ilearn">ILearn</h1>
-                <div class="headerline-1"></div>
-                <div class="headerline-2"></div>
-                <h2 class="mov-frwd-text">
-                  <span>"</span> Moving forward <span>"</span>
-                </h2>
-              </div>
-              <!-- Login form -->
-              <div class="col l6 m6 s7">
-                <div class="card transparent z-depth-5">
-                  <div class="row card-row">
-                    <div class="col s2 m2 l2"></div>
-                    <form class="col s9 m8 l8">
-                      <div class="row card-row">
-                        <div class="col s12">
-                          <h2
-                            class="center-align white-text gettingStarted-text"
-                          >
-                            Getting Started
-                          </h2>
+        <!-- Home section -->
+        <section id="home">
+            <div id="overlay">
+                <div class="container">
+                    <div class="row" id="__container">
+                        <div class="col l6 m6 s5">
+                            <h1 class="ilearn">ILearn</h1>
+                            <div class="headerline-1"></div>
+                            <div class="headerline-2"></div>
+                            <h2 class="mov-frwd-text">
+                                <span>"</span> Moving forward <span>"</span>
+                            </h2>
                         </div>
-                      </div>
-                      <div class="row card-row">
-                        <div class="input-field col s12">
-                          <input id="input_text" type="email" />
-                          <label for="input_text">Email</label>
+                        <!-- Login form -->
+                        <div class="col l6 m6 s7">
+                            <div class="card transparent z-depth-5">
+                                <div class="row card-row">
+                                    <div class="col s2 m2 l2"></div>
+                                    <form class="col s9 m8 l8">
+                                        <div class="row card-row">
+                                            <div class="col s12">
+                                                <h2 class="center-align white-text gettingStarted-text">
+                                                    Getting Started
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="row card-row">
+                                            <div class="input-field col s12">
+                                                <input id="input_text" type="email" />
+                                                <label for="input_text">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="row card-row">
+                                            <div class="input-field col s12">
+                                                <input id="password" type="password" class="validate" />
+                                                <label for="password">Password</label>
+                                            </div>
+                                        </div>
+                                        <div class="row card-row">
+                                            <div class="input_field col s12">
+                                                <button class="waves-effect white black-text waves-light btn btn-small login-btn">
+                                                    <i class="fa fa-user"></i> Login
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="row card-row">
+                                            <div class="col s12">
+                                                <p class="center-align signup-para">
+                                                    Don't have an Account?
+                                                    <a href="#" class="white-text" style="text-decoration:underline;">Signup
+                                                        Here</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="col s2 m2 l2"></div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="row card-row">
-                        <div class="input-field col s12">
-                          <input
-                            id="password"
-                            type="password"
-                            class="validate"
-                          />
-                          <label for="password">Password</label>
-                        </div>
-                      </div>
-                      <div class="row card-row">
-                        <div class="input_field col s12">
-                          <button
-                            class="waves-effect white black-text waves-light btn btn-small login-btn"
-                          >
-                            <i class="fa fa-user"></i> Login
-                          </button>
-                        </div>
-                      </div>
-                      <div class="row card-row">
-                        <div class="col s12">
-                          <p class="center-align signup-para">
-                            Don't have an Account?
-                            <a
-                              href="#"
-                              class="white-text"
-                              style="text-decoration:underline;"
-                              >Signup Here</a
-                            >
-                          </p>
-                        </div>
-                      </div>
-                    </form>
-                    <div class="col s2 m2 l2"></div>
-                  </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Vision Section -->
-      <section>
-        <div class="div-background">
-          <div class="container">
-            <h4 class="center-align">
-              " The Beautiful thing about learning is that no one can take it
-              from you!"
-            </h4>
-            <p class="center-align">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              nesciunt explicabo quasi deserunt et. Illum tempore explicabo
-              dolorem quis cupiditate! Distinctio rem sint sapiente nisi
-              provident sit totam quis explicabo.
-            </p>
-          </div>
-        </div>
-      </section>
+        <!-- Vision Section -->
+        <section>
+            <div class="div-background">
+                <div class="container">
+                    <h4 class="center-align">
+                        " The Beautiful thing about learning is that no one can take it
+                        from you!"
+                    </h4>
+                    <p class="center-align">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                        nesciunt explicabo quasi deserunt et. Illum tempore explicabo
+                        dolorem quis cupiditate! Distinctio rem sint sapiente nisi
+                        provident sit totam quis explicabo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section>
+            <div class='div-background'>
+                <div class='container' style="padding-top: 3rem; margin-bottom: 3rem;">
+                    <h2 class="center-align">Our Team</h2>
+                    <div class='row team-cards'>
+                        <div class='col s12 m4 l4 res-cards'>
+                            <div class='card medium hoverable white black-text z-depth-5'>
+                                <img src='./images/soha.jpeg' class='center-align imageStyles' />
+                                <div class='card-content center-align'>
+                                    <p class='black-text'>Soha Moosa</p>
+                                    <hr />
+                                    <p>Full Stack Javascript Developer</p>
+                                    <p>Team member at SRN & Co-Founder of Softious System</p>
+                                   <a target="_blank" href="https://www.linkedin.com/in/soha-m-ba7a27b2/"><i class='fab fa-linkedin black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                   <a target="_blank" href="https://www.facebook.com/soha.moosa"><i class='fab fa-facebook black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                   <a target="_blank" href="https://twitter.com/soha_moosa"><i class='fab fa-twitter black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                   <a target="_blank" href="https://github.com/soha-moosa"><i class='fab fa-github black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='col s12 m4 l4 res-cards'>
+                            <div class='card medium hoverable white black-text z-depth-5'>
+                                <img src='./images/rehan.jpeg' class='center-align imageStyles' />
+                                <div class='card-content center-align'>
+                                    <p>Rehan Sattar</p>
+                                    <hr />
+                                    <p>MERN Stack Developer</p>
+                                    <p>Team Lead at SRN & Co-Founder of Softious System</p>
+                                   <a target="_blank" href="https://www.linkedin.com/in/rehan-sattar-036299158/"><i class='fab fa-linkedin black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                   <a target="_blank" href="https://www.facebook.com/rehan.sattar.58"><i class='fab fa-facebook black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                   <a target="_blank" href="https://twitter.com/Rehan_Sattar26"><i class='fab fa-twitter black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                   <a target="_blank" href="https://github.com/Rehan-Sattar"><i class='fab fa-github black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='col s12 m4 l4 res-cards'>
+                            <div class='card medium hoverable white black-text z-depth-5'>
+                                <img src='./images/neha.jpeg' class='center-align imageStyles'>
+                                <div class='card-content center-align'>
+                                    <p>Neha Ejaz</p>
+                                    <hr />
+                                    <p>Full Stack Javascript Developer</p>
+                                    <p>Team Member at SRN & Open Source Collaborator</p>
+                                   <a target="_blank" href="https://www.linkedin.com/in/nehaejaz/"><i class='fab fa-linkedin black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                   <a target="_blank" href="https://www.facebook.com/nehaejaz98"><i class='fab fa-facebook black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                   <a target="_blank" href="#"><i class='fab fa-twitter black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                   <a target="_blank" href="https://github.com/nehaejaz"><i class='fab fa-github black-text' style='font-size: 24px; margin-left: .25rem; margin-right: .25rem; margin-top: 2.25rem;'></i></a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section>
+            <div class='div-background'>
+                <div class='row'>
+                    <div class='col s12 m4 l4'>
+                        <div class='card large hoverable white black-text z-depth-5'>
+                            <div class="card-title">
+                                <h4 class="center-align black-text course-header">HTML5</h4>
+                            </div>
+                            <img src="./images/html.png" class="course-image">
+                            <div class="row">
+                                <div class="col l1"></div>
+                                <div class="col l10">
+                                    <h6 class="grey-text center-align">HTML stands for Hyper Text Markup Language.It is
+                                        the
+                                        standard markup language for creating
+                                        Web pages and describes its structure.</h6>
+                                </div>
+                                <div class="col l1"></div>
+                            </div>
+                            <div class="card-action">
+                                <div class="row">
+                                    <div class="col s3 l4"></div>
+                                    <div class="col s7 l5">
+                                        <button class="waves-effect waves-light center-align btn blue white-text">Course
+                                            Details</button>
+                                    </div>
+                                    <div class="col s2 l3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='col s12 m4 l4'>
+                        <div class='card large hoverable white black-text z-depth-5'>
+                            <div class="card-title">
+                                <h4 class="center-align black-text course-header">CSS3</h4>
+                            </div>
+                            <img src="./images/css.png" class="course-image">
+                            <div class="row">
+                                <div class="col l1"></div>
+                                <div class="col l10">
+                                    <h6 class="grey-text center-align">CSS is used to define styles for your web pages,
+                                        including the design, layout and variations in display for different devices
+                                        and
+                                        screen sizes.</h6>
+                                </div>
+                                <div class="col l1"></div>
+                            </div>
+                            <div class="card-action">
+                                <div class="row">
+                                    <div class="col s3 l4"></div>
+                                    <div class="col s7 l5">
+                                        <button class="waves-effect waves-light center-align btn blue white-text">Course
+                                            Details</button>
+                                    </div>
+                                    <div class="col s2 l3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='col s12 m4 l4'>
+                        <div class='card large hoverable white black-text z-depth-5'>
+                            <div class="card-title">
+                                <h4 class="center-align black-text course-header">JavaScript</h4>
+                            </div>
+                            <img src="./images/javascript.png" class="course-image">
+                            <div class="row">
+                                <div class="col l1"></div>
+                                <div class="col l10">
+                                    <h6 class="grey-text center-align">JavaScript is a very powerful
+                                        client-side scripting language. JavaScript is used mainly for enhancing the
+                                        interaction of a user with the webpage.</h6>
+                                </div>
+                                <div class="col l1"></div>
+                            </div>
+                            <div class="card-action">
+                                <div class="row">
+                                    <div class="col s3 l4"></div>
+                                    <div class="col s7 l5">
+                                        <button class="waves-effect waves-light center-align btn blue white-text">Course
+                                            Details</button>
+                                    </div>
+                                    <div class="col s2 l3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section>
+            <footer class="page-footer pink lighten-2">
+                    <div class="row">
+                        <div class="col l2 s12">
+                        </div>
+                        <div class="col l2 s12"></div>
+                        <div class="col l4 s12"></div>
+                        <div class="col l4 s12">
+                            <h5 class="white-text">Contact us</h5>
+                            <form class="col s9 m8 l8">
+                                <div class="row card-row">
+                                    <div class="input-field col s12">
+                                        <input id="input_text" type="email" />
+                                        <label for="input_text">Email</label>
+                                    </div>
+                                </div>
+                                <div class="row card-row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea" class="materialize-textarea"></textarea>
+                                        <label for="textarea">Message</label>
+                                    </div>
+                                </div>
+                                <div class="row card-row">
+                                    <div class="input_field col s12">
+                                        <button class="waves-effect hoverable white black-text waves-light btn btn-small login-btn">  Send
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                <div class="footer-copyright">
+                    <div class="container white-text">
+                        © 2019 Interactive Learning. All rights reserved
+                        <a class="white-text right footer-icon" href="#!"><i class="fab fa-snapchat"></i></a>
+                        <a class="white-text right footer-icon" href="#!"><i class="fab fa-youtube"></i></a>
+                        <a class="white-text right footer-icon" href="#!"><i class="fab fa-instagram"></i></a>
+                        <a class="white-text right footer-icon" href="#!"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
     </div>
-  </body>
-  <!-- Compiled and minified Jquery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="./js/index.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.sidenav').sidenav()
+</body>
+<!-- Compiled and minified Jquery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav()
     })
-  </script>
+</script>
+
 </html>
