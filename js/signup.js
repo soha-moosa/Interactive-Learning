@@ -46,7 +46,7 @@ const signUpStudent = student => {
         swal('Sorry!', 'Some error occured!', 'error')
       } else {
         localStorage.setItem('student', JSON.stringify(student))
-        window.location.replace('../html/dashboard.html')
+        window.location.replace('../html/greetingsPage.html')
       }
     })
 }

@@ -66,6 +66,7 @@ const registerCourseForMe = (req, res) => {
   )
     .then(student => {
       res.status(200).send({
+        message: 'success',
         ...student._doc
       })
     })
