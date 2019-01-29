@@ -269,9 +269,47 @@
                                 <div class="row">
                                     <div class="col s3 l4"></div>
                                     <div class="col s7 l5">
-                                        <button class="waves-effect waves-light center-align btn blue white-text">
-                                            Course Details
+                                        <button data-target="modal1" class="waves-effect waves-light modal-trigger center-align btn blue white-text">
+                                            Course Content
                                         </button>
+
+                                        <div id="modal1" class="modal">
+                                            <div class="modal-content">
+                                                <h6 class="center-align">Content</h6>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col s6 l6 m6">
+                                                            <p>Introduction</p>
+                                                            <p>Chapter 1: Structure</p>
+                                                            <p>Chapter 2: Text</p>
+                                                            <p>Chapter 3: Lists</p>
+                                                            <p>Chapter 4: Links</p>
+                                                            <p>Chapter 5: Images</p>
+                                                            <p>Chapter 6: Tables</p>
+                                                            <p>Chapter 7: Forms</p>
+                                                            <p>Chapter 8: Extra Markup</p>
+                                                            <p>Chapter 9: Flash, Video & Audio</p>
+                                                        </div>
+                                                        <div class="col s6 l6 m6">
+                                                            <p>Chapter 10: Introducing CSS</p>
+                                                            <p>Chapter 11: Color</p>
+                                                            <p>Chapter 12: Text</p>
+                                                            <p>Chapter 13: Boxes</p>
+                                                            <p>Chapter 14: Lists, Tables & Forms</p>
+                                                            <p>Chapter 15: Layout</p>
+                                                            <p>Chapter 16: Images</p>
+                                                            <p>Chapter 17: HTML5 Layout</p>
+                                                            <p>Chapter 18: Process & Design</p>
+                                                            <p>Chapter 19: Practical Information</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <div class="col s2 l3"></div>
                                 </div>
@@ -301,7 +339,7 @@
                                     <div class="col s3 l4"></div>
                                     <div class="col s7 l5">
                                         <button class="waves-effect waves-light center-align btn blue white-text">
-                                            Course Details
+                                            Coming Soon
                                         </button>
                                     </div>
                                     <div class="col s2 l3"></div>
@@ -334,7 +372,7 @@
                                     <div class="col s3 l4"></div>
                                     <div class="col s7 l5">
                                         <button class="waves-effect waves-light center-align btn blue white-text">
-                                            Course Details
+                                            Coming Soon
                                         </button>
                                     </div>
                                     <div class="col s2 l3"></div>
@@ -403,6 +441,11 @@
     $(document).ready(function () {
         $('.sidenav').sidenav()
     })
+
+    // Modal
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
 
     // Smooth scrolling
     $(document).ready(function () {

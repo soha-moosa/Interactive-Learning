@@ -145,6 +145,21 @@ footer .footer-icon {
   .color ul li a {
     color: white !important; }
 
+.modal {
+  background-color: #00bcd4 !important; }
+  .modal .modal-content h6 {
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-size: 116%;
+    font-weight: bold; }
+  .modal .modal-content p {
+    color: white;
+    font-weight: bold; }
+  .modal .modal-footer {
+    background-color: #0097a7 !important; }
+    .modal .modal-footer a {
+      color: white !important; }
+
 @media screen and (min-width: 320px) and (max-width: 400px) {
   #__container {
     padding-top: 49%; }

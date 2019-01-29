@@ -206,6 +206,29 @@ footer{
   }
 }
 
+.modal{
+    background-color: #00bcd4 !important;
+    .modal-content{
+        h6{
+            color: white;
+            font-family: $dancing-script-font;
+            font-size: 116%;
+            font-weight: bold;
+        }
+        p{
+            color: white;
+            font-weight: bold;
+        }
+    }
+    .modal-footer{
+        background-color: #0097a7 !important;
+        a{
+            color: white !important;
+        }
+    }
+
+}
+
 // Media Queries
 
 @media screen and (min-width: 320px) and (max-width: 400px) {
