@@ -1,149 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../../../css/courseOverview.css" />
-    <title>CourseOverview</title>
+    <title>Interactive Learning</title>
 
     <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <!-- Materialize icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Font awesome  -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous" />
     <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Crimson+Text"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Dancing+Script"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Comfortaa"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
+</head>
 
-  <body>
+<body>
     <div class="wrapper">
-      <!-- header -->
-      <section>
-        <header>
-          <div class="container">
-            <nav class="transparent z-depth-0">
-              <div class="nav-wrapper">
-                <a href="#!" class="brand-logo ilearn ilearn-detailed">
-                  <i class="fa fa-graduation-cap"></i> ILearn</a
-                >
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-                  ><i class="material-icons">menu</i></a
-                >
-                <ul class="right hide-on-med-and-down">
-                  <li>
-                    <a href="#"><i class="fa fa-sign-out-alt"></i> Logout</a>
-                  </li>
+        <!-- header -->
+        <section>
+            <header>
+                <nav class="transparent z-depth-0">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo ilearn ilearn-detailed">
+                            <i class="fa fa-graduation-cap"></i> ILearn</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right navbar-nav hide-on-med-and-down">
+                            <li>
+                                <a href="../../greetingsPage.html"><i class="fa fa-th-list"></i> Dashboard</a>
+                            </li>
+                            <li>
+                                <a onclick="logout()"><i class="fa fa-sign-out-alt"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav pink lighten-5" id="mobile-demo">
+                    <li class="active">
+                        <a onclick="logout()"><i class="fa fa-sign-out-alt"></i> Logout</a>
+                    </li>
                 </ul>
-              </div>
-            </nav>
-          </div>
+            </header>
+        </section>
+        <a href="./content-page-html.html">
+            <div style="margin-top:2%; " class="container center  darken-2">
+                <div style="border-radius:50%; padding: 2%;" class=" white darken-2 hoverable z-depth-5">
+                    <i style="color:black; font-size: 5em;" class="fas fa-code"></i>
+                </div>
+            </div>
+        </a>
+        <div style="font-weight: bold" class="container center  darken-2">
+            <div>
+                <p>Overview</p>
+            </div>
+        </div>
 
-          <ul class="sidenav pink lighten-5" id="mobile-demo">
-            <li class="active">
-              <a href="#" class="grey-text text-darken-2"
-                ><i class="fa fa-home purple-text"></i> Home</a
-              >
-            </li>
-            <li>
-              <a href="#" class="grey-text text-darken-2"
-                ><i class="fa fa-info purple-text"></i> About</a
-              >
-            </li>
-            <li>
-              <a href="#" class="grey-text text-darken-2"
-                ><i class="fa fa-users purple-text"></i> Team</a
-              >
-            </li>
-            <li>
-              <a href="#" class="grey-text text-darken-2"
-                ><i class="fa fa-book purple-text"></i> Courses</a
-              >
-            </li>
-            <li>
-              <a href="#" class="grey-text text-darken-2"
-                ><i class="fa fa-phone purple-text"></i> Contact</a
-              >
-            </li>
-          </ul>
-        </header>
-      </section>
-    </div>
+        <div class="container center ">
+            <div style="border-radius:50%; margin-right: 20%; padding: 3%;" class=" white darken-2 hoverable z-depth-5 ">
+                <a href="#">
+                    <i style="color:black; font-size: 5em;" class="fas fa-book"></i>
+                </a>
+            </div>
+            <div style="border-radius:50%; padding: 3%;" class=" white darken-2 hoverable z-depth-5 ">
+                <a href="#">
+                    <i style="color:black; font-size: 5em;" class="fas fa-trophy"></i>
+                </a>
+            </div>
+        </div>
 
-    <div style="margin-top:2%; " class="container center  darken-2">
-      <div
-        style="border-radius:50%; padding: 2%;"
-        class=" white darken-2 hoverable z-depth-5"
-      >
-        <i style="color:black; font-size: 5em;" class="fas fa-code"></i>
-      </div>
-    </div>
-    <div style="font-weight: bold" class="container center  darken-2">
-      <div><p>Overview</p></div>
-    </div>
+        <div style="font-weight: bold" class="container center  darken-2">
+            <div style="margin-right: 26%;">
+                <p>HTML Basics</p>
+            </div>
+            <div>
+                <p>Challenges</p>
+            </div>
+        </div>
 
-    <div class="container center ">
-      <div
-        style="border-radius:50%; margin-right: 20%; padding: 3%;"
-        class=" white darken-2 hoverable z-depth-5 "
-      >
-        <i style="color:black; font-size: 5em;" class="fas fa-book"></i>
-      </div>
-      <div
-        style="border-radius:50%; padding: 3%;"
-        class=" white darken-2 hoverable z-depth-5 "
-      >
-        <i style="color:black; font-size: 5em;" class="fas fa-trophy"></i>
-      </div>
+        <div class="container center">
+            <div style="border-radius:50%; padding: 3%;" class=" white darken-2 hoverable z-depth-5 ">
+                <a href="#">
+                    <i style="color:black; font-size: 5em;" class="fab fa-html5"></i>
+                </a>
+            </div>
+        </div>
+        </a>
+        <div style="font-weight: bold" class="container center  darken-2">
+            <div>
+                <p>HTML 5</p>
+            </div>
+        </div>
     </div>
-    <div style="font-weight: bold" class="container center  darken-2">
-      <div style="margin-right: 26%;"><p>HTML Basics</p></div>
-      <div><p>Challenges</p></div>
-    </div>
-
-    <div class="container center">
-      <div
-        style="border-radius:50%; padding: 3%;"
-        class=" white darken-2 hoverable z-depth-5 "
-      >
-        <i style="color:black; font-size: 5em;" class="fab fa-html5"></i>
-      </div>
-    </div>
-    <div style="font-weight: bold" class="container center  darken-2">
-      <div><p>HTML 5</p></div>
-    </div>
-  </body>
-  <!-- Compiled and minified Jquery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="../js/courseEnrollment.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.sidenav').sidenav()
+</body>
+<!-- Compiled and minified Jquery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../../../js/courseEnrollment.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav()
     })
-  </script>
+
+    let logout = () => {
+        localStorage.removeItem('student');
+        window.location.href = "../../../index.html";
+    }
+</script>
+
 </html>

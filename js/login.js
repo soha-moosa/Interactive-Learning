@@ -1,4 +1,4 @@
-const url = `http://localhost:3000/student/login-student`
+const url = `http://localhost:8080/student/login-student`
 const form = document.getElementById('loginForm')
 
 // handlers

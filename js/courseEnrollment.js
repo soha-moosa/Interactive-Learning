@@ -2,7 +2,7 @@ const htmlCourseEnrollmentButton = document.getElementById('html_enrollment')
 const cssCourseEnrollmentButton = document.getElementById('css_enrollment')
 const jsEnrollmentButton = document.getElementById('javascript_enrollment')
 const true_flag_button = document.getElementById('true_flag_button')
-const url = 'http://localhost:3000/student/register-course-for-me'
+const url = 'http://localhost:8080/student/register-course-for-me'
 htmlCourseEnrollmentButton.addEventListener('click', e => {
   const course = {
     _id: '5c4cb4a7e7179a090e0a8242',
