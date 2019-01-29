@@ -1,3 +1,16 @@
+.swal-overlay {
+    background-color: #65455a;
+}
+.swal-modal {
+    background-color: blueviolet;
+}
+.swal-text {
+    color: white;
+}
+.swal-title {
+    color: white;
+}
+
 $monsterrat-text-font: 'Montserrat', sans-serif;
 $dancing-script-font: 'Dancing Script', cursive;
 $comfortaa-font: 'Comfortaa', cursive;
@@ -24,7 +37,7 @@ body {
 
 #__container {
   margin-bottom: 0px;
-  padding-top: 15%;
+  padding-top: 7.2%;
 }
 
 nav {
@@ -64,11 +77,6 @@ nav {
   margin-left: 1%;
 }
 
-.mov-frwd-text {
-  font-size: 2.5rem;
-  font-family: $dancing-script-font;
-}
-
 /* label focus color */
 .input-field input:focus + label {
   color: #eceff1 !important;
@@ -94,95 +102,27 @@ nav {
   color: #eceff1 !important;
 }
 
+
+/* radio button color */
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid #eceff1 !important;
+}
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: #eceff1 !important;
+}
+
 .card {
+    height: 80vh;
+    width: 95%;
   h2 {
     font-family: $dancing-script-font;
   }
 }
 
-.headerline-1 {
-  height: 5px;
-  width: 200px;
-  background-color: #fff;
-}
-
-.headerline-2 {
-  margin-top: 5px;
-  height: 5px;
-  width: 300px;
-  background-color: #fff;
-}
-
-.div-background {
-  color: #fff;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.imageStyles{
-  height: 150px;
-  width: 150px;
-  position: relative;
-  top: 9px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 100px 100px;
-  margin-top: -70px;
-  border: 3px solid black;
-}
-
-.team-cards{
-    margin-top: 10%;
-}
-
-.course-image{
-    margin-left: 25%;
-    height: 255px;
-    width: 255px;
-}
-
-  .login-btn {
+.login-btn {
     width: 100%;
   }
 
@@ -195,8 +135,12 @@ footer{
 // Media Queries
 
 @media screen and (min-width: 320px) and (max-width: 400px) {
-    #__container {
-    padding-top: 49%;
+  #__container {
+    padding-top: 36%;
+    }
+  .card {
+    height: 84vh;
+    width: 95%;
     }
   .ilearn-detailed {
     font-size: 26px !important;
@@ -210,22 +154,8 @@ footer{
     font-size: 2rem;
   }
 
-  .mov-frwd-text {
-    font-size: 1rem;
-  }
-
-  .headerline-1 {
-    height: 2px;
-    width: 95px;
-  }
-
-  .headerline-2 {
-    height: 2px;
-    width: 117px;
-  }
-
   .gettingStarted-text{
-      font-size: 130%;
+      font-size: 250%;
     }
 
   .card-row {
@@ -238,31 +168,16 @@ footer{
   .login-btn {
     width: 100%;
   }
-
-  .signup-para {
-    font-size: 12px;
-  }
-  .div-background {
-    h4 {
-      font-size: 20px;
-    }
-  }
-  .res-cards{
-      margin: 57px 0 0 0;
-  }
-  .course-image{
-    margin-left: 11%;
-    }
-
-    .course-header{
-        position: relative;
-        top: 16px;
-    }
 }
 
+
 @media screen and (min-width: 401px) and (max-width: 500px) {
-  #__container {
-    padding-top: 30%;
+   #__container {
+    padding-top: 36%;
+    }
+  .card {
+    height: 73vh;
+    width: 95%;
     }
   .ilearn-detailed {
     font-size: 26px !important;
@@ -275,22 +190,8 @@ footer{
     font-size: 2rem;
   }
 
-  .mov-frwd-text {
-    font-size: 1rem;
-  }
-
-  .headerline-1 {
-    height: 2px;
-    width: 95px;
-  }
-
-  .headerline-2 {
-    height: 2px;
-    width: 117px;
-  }
-
   .gettingStarted-text{
-      font-size: 130%;
+      font-size: 250%;
     }
 
   .card-row {
@@ -303,25 +204,6 @@ footer{
   .login-btn {
     width: 100%;
   }
-
-  .signup-para {
-    font-size: 12px;
-  }
-  .div-background {
-    h4 {
-      font-size: 20px;
-    }
-  }
-   .res-cards{
-      margin: 57px 0 0 0;
-  }
-    .course-image{
-    margin-left: 16%;
-    }
-    .course-header{
-        position: relative;
-        top: 16px;
-    }
 }
 
 @media screen and (min-width: 501px) and (max-width: 770px) {
@@ -332,24 +214,11 @@ footer{
     font-size: 26px !important;
     margin-left: 0px;
   }
-
   .login-content {
     margin-top: 26%;
   }
   .gettingStarted-text{
       font-size: 255%;
-    }
-    .res-cards{
-      margin: 30px 0 0 0;
-  }
-.course-image{
-    margin-left: 0px;
-    height: 229px;
-    width: 229px;
-    }
-    .course-header{
-        position: relative;
-        top: 16px;
     }
 }
 
@@ -364,16 +233,81 @@ footer{
   .ilearn-detailed {
     margin-left: 1%;
   }
-  .course-image{
-    margin-left: 16%;
-    height: 229px;
-    width: 229px;
-    }
-    .course-header{
-        position: relative;
-        top: 16px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
+}
+
+@media screen and (width: 320px) and (height: 568px) {
+  .card {
+    height: 96vh !important;
+    width: 95% !important;
+    }
+}
+
+@media screen and (width: 411px) and (height: 823px){
+   #__container {
+    padding-top: 30% !important;
+    }
+  .card {
+    height: 68vh !important;
+    width: 95% !important;
+    } 
+
+    #home{
+        height: 800px;
+    }
+}
+
+@media screen and (width: 414px) and (height: 736px){
+   #__container {
+    padding-top: 32% !important;
+    }
+  .card {
+    height: 76vh !important;
+    width: 95% !important;
+    } 
+}
+
+@media screen and (width: 375px) and (height: 812px){
+
+     #__container {
+    padding-top: 40% !important;
+    }
+  .card {
+    height: 68vh !important;
+    width: 95% !important;
+    } 
+
+    #home{
+        height: 782px;
+    }
+}
+
+@media screen and (width: 768px) and (height: 1024px){
+    
+     #__container {
+    padding-top: 20% !important;
+    }
+  .card {
+    height: 68vh !important;
+    width: 95% !important;
+    } 
+
+    #home{
+        height: 1000px;
+    }
+}
+
+@media screen and (width: 1024px) and (height: 1366px){
+   #__container {
+    padding-top: 20% !important;
+    }
+  .card {
+    height: 46vh !important;
+    width: 95% !important;
+    } 
+    #home{
+        height: 1340px !important;
+    }
 }
