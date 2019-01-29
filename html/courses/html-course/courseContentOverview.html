@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
 </head>
 
-<body>
+<body onload="authCheck()">
     <div class="wrapper">
         <!-- header -->
         <section>
@@ -42,13 +42,16 @@
                     </div>
                 </nav>
                 <ul class="sidenav pink lighten-5" id="mobile-demo">
-                    <li class="active">
+                    <li>
+                        <a href="../../greetingsPage.html"><i class="fa fa-th-list"></i> Dashboard</a>
+                    </li>
+                    <li>
                         <a onclick="logout()"><i class="fa fa-sign-out-alt"></i> Logout</a>
                     </li>
                 </ul>
             </header>
         </section>
-        <a href="./content-page-html.html">
+        <a href="./content-page.html">
             <div style="margin-top:2%; " class="container center  darken-2">
                 <div style="border-radius:50%; padding: 2%;" class=" white darken-2 hoverable z-depth-5">
                     <i style="color:black; font-size: 5em;" class="fas fa-code"></i>
@@ -111,6 +114,12 @@
     let logout = () => {
         localStorage.removeItem('student');
         window.location.href = "../../../index.html";
+    }
+
+    let authCheck = () => {
+        if (!localStorage.getItem('student')) {
+            window.location.href = '../../../index.html';
+        }
     }
 </script>
 

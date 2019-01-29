@@ -1,5 +1,5 @@
-/* .wrapper {
-    overflow: hidden; } */
+.wrapper {
+    overflow: hidden; }
   
   body {
     background: url("../images/trianglify.png") no-repeat fixed center;
@@ -33,7 +33,7 @@
   
   .ilearn-detailed {
     font-size: 30px;
-    margin-left: 1%; }
+    margin-left: 5%; }
   
   @media screen and (min-width: 320px) and (max-width: 400px) {
     .main-content {

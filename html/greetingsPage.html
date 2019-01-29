@@ -33,7 +33,7 @@
     <title>Interactive Learning</title>
 </head>
 
-<body>
+<body onload="authCheck()">
 
     <div class="wrapper">
         <!-- header -->
@@ -45,15 +45,15 @@
                             <i class="fa fa-graduation-cap"></i> ILearn</a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul class="right navbar-nav hide-on-med-and-down">
-                            <li class="active">
-                                <a href="#"><i class="fa fa-sign-out-alt"></i> Logout</a>
+                            <li>
+                                <a onclick="logout()"><i class="fa fa-sign-out-alt"></i> Logout</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
                 <ul class="sidenav pink lighten-5" id="mobile-demo">
-                    <li class="active">
-                        <a href="#"><i class="fa fa-sign-out-alt"></i> Logout</a>
+                    <li>
+                        <a onclick="logout()"><i class="fa fa-sign-out-alt"></i> Logout</a>
                     </li>
                 </ul>
             </header>
@@ -176,7 +176,8 @@
             </div>
             <div class="modal-footer">
                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">close</a>
-                <a href="./courses/html-course/courseContentOverview.html" class="waves-effect btn purple white-text" id="true_flag_button">
+                <a href="./courses/html-course/courseContentOverview.html" class="waves-effect btn purple white-text"
+                    id="true_flag_button">
                     Yes
                 </a>
             </div>
@@ -198,6 +199,17 @@
         $('#modal').modal();
         $('#modal').modal('open');
     });
+
+    let logout = () => {
+        localStorage.removeItem('student');
+        window.location.href = "../index.html";
+    }
+
+    let authCheck = () => {
+        if (!localStorage.getItem('student')) {
+            window.location.href = '../index.html';
+        }
+    }
 </script>
 <script src="../js/courseEnrollment.js"></script>
 
