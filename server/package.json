@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Learning app server",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soha-moosa/Interactive-Learning.git"
+  },
+  "author": "Rehan-Sattar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soha-moosa/Interactive-Learning/issues"
+  },
+  "homepage": "https://github.com/soha-moosa/Interactive-Learning#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.6"
+  }
+}
