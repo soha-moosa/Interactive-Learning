@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+const localDb = 'mongodb://localhost:27020/ilearn'
 mongoose.connect(
   'mongodb://soha-moosa:interactivelearning123@ds213715.mlab.com:13715/interactive-learning',
   { useNewUrlParser: true },
