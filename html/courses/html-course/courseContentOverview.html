@@ -19,6 +19,11 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
+    <style>
+        a {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body onload="authCheck()">
@@ -51,7 +56,7 @@
                 </ul>
             </header>
         </section>
-        <a href="./content-page.html">
+        <a onClick="courseOverview();">
             <div style="margin-top:2%; " class="container center  darken-2">
                 <div style="border-radius:50%; padding: 2%;" class=" white darken-2 hoverable z-depth-5">
                     <i style="color:black; font-size: 5em;" class="fas fa-code"></i>
@@ -66,12 +71,12 @@
 
         <div class="container center ">
             <div style="border-radius:50%; margin-right: 20%; padding: 3%;" class=" white darken-2 hoverable z-depth-5 ">
-                <a href="#">
+                <a onclick="courseHtmlCourse();">
                     <i style="color:black; font-size: 5em;" class="fas fa-book"></i>
                 </a>
             </div>
             <div style="border-radius:50%; padding: 3%;" class=" white darken-2 hoverable z-depth-5 ">
-                <a href="#">
+                <a onclick="courseChallenges();">
                     <i style="color:black; font-size: 5em;" class="fas fa-trophy"></i>
                 </a>
             </div>
@@ -88,7 +93,7 @@
 
         <div class="container center">
             <div style="border-radius:50%; padding: 3%;" class=" white darken-2 hoverable z-depth-5 ">
-                <a href="#">
+                <a onclick="courseHtml5();">
                     <i style="color:black; font-size: 5em;" class="fab fa-html5"></i>
                 </a>
             </div>
@@ -105,7 +110,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="../../../js/courseEnrollment.js"></script>
+<script src="../../../js/courseOverview.js"></script>
 <script>
     $(document).ready(function () {
         $('.sidenav').sidenav()
@@ -116,11 +121,6 @@
         window.location.href = "../../../index.html";
     }
 
-    let authCheck = () => {
-        if (!localStorage.getItem('student')) {
-            window.location.href = '../../../index.html';
-        }
-    }
 </script>
 
 </html>
