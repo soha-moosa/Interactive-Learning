@@ -76,8 +76,32 @@ const registerCourseForMe = (req, res) => {
       })
     })
 }
+
+const updateTestStatus = (req, res) => {
+  const { _id } = req.params
+  if (req.body.testType === 'HTML') {
+    Student.findOne({ _id }).then(student => {
+      if (student) {
+        student.courses[2].obtainedMarks += 2
+        Student.update()
+        // marks = Number(marks) + 2
+        // student.courses[0].obtainedMarks = marks
+        // console.log((student.courses[0].obtainedMarks = marks))
+        res.send(student.courses[2])
+      }
+    })
+  } else if (req.body.testType === 'CSS') {
+  } else if (req.body.testType === 'JS') {
+  } else {
+    // res.send({
+    //   status: 'NONE TEST!'
+    // })
+  }
+}
+
 module.exports = {
   registerStudent,
   loginStudent,
-  registerCourseForMe
+  registerCourseForMe,
+  updateTestStatus
 }
