@@ -15,9 +15,14 @@ const Student = new Schema({
   gender: String,
   age: Number,
   instituteName: String,
-  courses: {
-    type: Array
-  }
+  courses: [
+    {
+      courseId: String,
+      obtainedMarks: Number,
+      totalMarks: Number,
+      progress: Number
+    }
+  ]
 })
 
 module.exports = new mongoose.model('Student', Student)

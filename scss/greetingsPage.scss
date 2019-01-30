@@ -20,3 +20,52 @@
   height: 255px;
   width: 255px;
 }
+
+$monsterrat-text-font: 'Montserrat', sans-serif;
+$dancing-script-font: 'Dancing Script', cursive;
+$comfortaa-font: 'Comfortaa', cursive;
+
+body {
+  font-family: $monsterrat-text-font;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+nav {
+  ul {
+    li {
+      margin-left: 1rem;
+      a {
+        font-size: 10px !important;
+        font-family: $comfortaa-font;
+        i {
+          font-size: inherit;
+        }
+      }
+    }
+  }
+}
+
+.sidenav {
+  background-color: purple !important;
+  li {
+    a {
+      font-size: 14px !important;
+      font-family: $comfortaa-font;
+      i {
+        font-size: inherit;
+      }
+    }
+  }
+}
+
+.ilearn {
+  font-family: $monsterrat-text-font;
+}
+
+.ilearn-detailed {
+  font-size: 30px;
+  margin-left: 1%;
+}
