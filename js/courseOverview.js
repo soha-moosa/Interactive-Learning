@@ -29,7 +29,7 @@ let courseHtml5 = () => {
 
 // ==================== DATA =============================
 const overViewContent = {
-  STRUCTURE: {
+  Structure: {
     title: 'The Web Structure',
     description:
       'The ability to code using HTML is essential for any web professional. Acquiring this skill should be the starting point for anyone who is learning how to create content for the web. ',
@@ -89,7 +89,7 @@ const overViewContent = {
     ]
   },
 
-  HTML_FILE: {
+  FILES: {
     title: 'The HTML File',
     description:
       "HTML files are text files, so you can use any text editor to create your first webpage. There are some very nice HTML editors available; you can choose the one that works for you. For now let's write our examples in Notepad.",
@@ -128,7 +128,7 @@ const overViewContent = {
 }
 
 const HTMLBasicContent = {
-  Stage1: {
+  Paragraphs: {
     title: 'The <p> Element',
     description:
       'To create a paragraph, simply type in the <p> element with its opening and closing tags:',
@@ -143,7 +143,7 @@ const HTMLBasicContent = {
     }
   },
 
-  Stage2: {
+  Breaking: {
     title: 'Single Line Break',
     description:
       'Use the <br /> tag to add a single line of text without starting a new paragraph:',
@@ -158,7 +158,7 @@ const HTMLBasicContent = {
     ]
   },
 
-  Stage3: {
+  Formatting: {
     title: 'Formatting Elements',
     description:
       'In HTML, there is a list of elements that specify text style.Formatting elements were designed to display special types of text:',
@@ -173,7 +173,7 @@ const HTMLBasicContent = {
     ]
   },
 
-  Stage4: {
+  HEADINGS: {
     title: 'HTML Headings',
     description:
       'HTML includes six levels of headings, which are ranked according to importance. These are <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.The following code defines all of the headings:',
@@ -192,7 +192,7 @@ const HTMLBasicContent = {
 }
 
 const challenges = {
-  Stage1: {
+  Question01: {
     test1: {
       question: 'Which tag is used to define a  paragraph element?',
       options: ['<p> ', '<a>', '<body>', '<head>'],
@@ -206,7 +206,7 @@ const challenges = {
     }
   },
 
-  Stage2: {
+  Question02: {
     test1: {
       question:
         'Which element is placed between the <html> tag and the <body> tag. ',
@@ -221,7 +221,7 @@ const challenges = {
     }
   },
 
-  Stage3: {
+  Question03: {
     test1: {
       question: 'What type of editor is used to edit HTML code?',
       options: ['Text Editor', 'Photo Editor'],
@@ -240,7 +240,7 @@ const challenges = {
     }
   },
 
-  Stage4: {
+  Question04: {
     test1: {
       question: 'Which tag is used to define a closing paragraph element?',
       options: ['/<p> ', '<a>', '<body>', '<head>'],
@@ -254,7 +254,7 @@ const challenges = {
     }
   },
 
-  Stage5: {
+  Question05: {
     test1: {
       question: 'Which two tags below make the text visually bold? ',
       options: ['sub and sup', 'ins and del', 'b and strong', 'i and em'],
@@ -270,7 +270,7 @@ const challenges = {
 }
 
 const HTML5Content = {
-  Stage1: {
+  HTML5: {
     title: 'What is New in HTML5?',
     description: 'The DOCTYPE declaration for HTML5 is very simple:',
     code: '<!DOCTYPE html>',
@@ -282,7 +282,7 @@ const HTML5Content = {
     }
   },
 
-  Stage2: {
+  NEW_ElEMENTS: {
     title: 'New HTML5 Elements',
     description:
       'The most interesting new HTML5 elements are: New semantic elements like <header>, <footer>, <article>, and <section>.New attributes of form elements like number, date, time, calendar, and range.New graphic elements: <svg> and <canvas>.New multimedia elements: <audio> and <video>.',
@@ -297,7 +297,7 @@ const HTML5Content = {
     ]
   },
 
-  Stage3: {
+  SEMENTICS: {
     title: 'HTML5 Semantic Elements',
     description:
       'A semantic element clearly describes its meaning to both the browser and the developer.',
