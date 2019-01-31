@@ -2,7 +2,9 @@ let logout = () => {
   localStorage.removeItem('student')
   window.location.href = '../../../index.html'
 }
-
+function hello() {
+  window.location.href = 'test.html'
+}
 let authCheckAndShowContent = () => {
   if (!localStorage.getItem('student')) {
     window.location.href = '../../../index.html'
@@ -29,9 +31,10 @@ let authCheckAndShowContent = () => {
     const topicsHTML5 = JSON.parse(localStorage.getItem('data'))
 
     // printToDom(topicsHTML5)
+    const data = JSON.parse(localStorage.getItem('data'))
+    printToDom()
   }
 }
-
 // object => loop
 
 // looping on object
@@ -44,7 +47,6 @@ let printToDom = titles => {
                         <div class="card-content black-text">
                             <h1 class="card-title">${title}</h1>
                     </div>
-                </div>
-    `
+                </div>     `
   })
 }
