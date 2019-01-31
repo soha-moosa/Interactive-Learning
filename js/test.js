@@ -58,40 +58,107 @@ let printToDom = (array, flag) => {
         `
     })
   } else if (flag === 'test-questions') {
-    console.log('IM here')
-    array.map(topic => {
-      console.log()
-      localStorage.setItem('test-question', JSON.stringify(topic.test))
-      document.getElementById('quizDiv').innerHTML = `
+    // console.log('Array : ', array)
+    if (Array.isArray(array[0])) {
+      let newArray = array[0]
+      newArray.map(topic => {
+        console.log('Im here: ', topic)
+        localStorage.setItem('test-question', JSON.stringify(topic.test))
+        // const [ options ] =
+        document.getElementById('quizDiv').innerHTML = `
+                <div class="container">
                 <p class="black-text">${topic.question}</p>
                  <form>
-    <p>
-      <label>
-        <input name="group1" type="radio" checked />
-        <span class="black-text">${topic.options[0]}</span>
-      </label>
-    </p>
-    <p>
-      <label>
-        <input name="group1" type="radio" />
-        <span>Yellow</span>
-      </label>
-    </p>
-    <p>
-      <label>
-        <input class="with-gap" name="group1" type="radio"  />
-        <span>Green</span>
-      </label>
-    </p>
-    <p>
-      <label>
-        <input name="group1" type="radio" disabled="disabled" />
-        <span>Brown</span>
-      </label>
-    </p>
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" checked value="${
+                              topic.options[0]
+                            }" />
+                            <span class="black-text">${topic.options[0]}</span>
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" value="${
+                              topic.options[1]
+                            }"/>
+                            <span class="black-text">${topic.options[1]}</span>
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input class="with-gap" name="group1" type="radio" value="${
+                              topic.options[2]
+                            }"  />
+                            <span  class="black-text">${topic.options[2]}</span>
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" value="${
+                              topic.options[3]
+                            }" />
+                            <span  class="black-text">${topic.options[3]}</span>
+                          </label>
+                        </p>
+
+                        <button type="button" class="btn pink" style="margin-bottom: 1rem;" onClick="calculateTest('${
+                          topic.right
+                        }')">Next</button>
   </form>
+  </div>
         `
-    })
+      })
+    } else {
+      array.map(topic => {
+        console.log('Im here babyyy: ', topic)
+        localStorage.setItem('test-question', JSON.stringify(topic.test))
+        // const [ options ] =
+        document.getElementById('quizDiv').innerHTML = `
+                <div class="container">
+                <p class="black-text">${topic.question}</p>
+                 <form>
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" checked value="${
+                              topic.options[0]
+                            }" />
+                            <span class="black-text">${topic.options[0]}</span>
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" value="${
+                              topic.options[1]
+                            }"/>
+                            <span class="black-text">${topic.options[1]}</span>
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input class="with-gap" name="group1" type="radio" value="${
+                              topic.options[2]
+                            }"  />
+                            <span  class="black-text">${topic.options[2]}</span>
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" value="${
+                              topic.options[3]
+                            }" />
+                            <span  class="black-text">${topic.options[3]}</span>
+                          </label>
+                        </p>
+
+                        <button type="button" class="btn pink" style="margin-bottom: 1rem;" onClick="calculateTest('${
+                          topic.right
+                        }')">Next</button>
+  </form>
+  </div>
+        `
+      })
+    }
   }
 }
 
@@ -101,4 +168,21 @@ const setTestContent = () => {
   console.log(test)
   testArray.push(test)
   printToDom(testArray, 'test-questions')
+}
+
+function calculateTest(right) {
+  let radios = document.getElementsByName('group1')
+  // console.log(right)
+  for (let i = 0; i < radios.length; i++) {
+    if (radios[i].checked) {
+      console.log('inside if', radios[i].value, right)
+      if (radios[i].value.trim() === right.trim()) {
+        console.log('You won baby!!!!')
+        swal('Yayy 🤗', 'You have passed the test', 'success')
+      } else {
+        console.log('Sorry lost!!')
+        swal('😟', 'You Failed', 'error')
+      }
+    }
+  }
 }
