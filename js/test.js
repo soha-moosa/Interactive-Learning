@@ -1,27 +1,27 @@
 let logout = () => {
-    localStorage.removeItem('student')
-    window.location.href = '../../../index.html'
+  localStorage.removeItem('student')
+  window.location.href = '../../../index.html'
 }
 function hello() {
-    window.location.href = 'test.html'
+  window.location.href = 'test.html'
 }
 let authCheckAndShowContent = () => {
-    if (!localStorage.getItem('student')) {
-        window.location.href = '../../../index.html'
-    }
+  if (!localStorage.getItem('student')) {
+    window.location.href = '../../../index.html'
+  }
 
-    if (JSON.parse(localStorage.getItem('data'))) {
-        const data = JSON.parse(localStorage.getItem('data'))
-        const item = localStorage.getItem('test-content');
-        console.log(data, item);
-        let content = []
-        for (let key in data) {
-            if (key === item) {
-                content.push(data[key])
-                printToDom(content, 'print-content')
-            }
-        }
+  if (JSON.parse(localStorage.getItem('data'))) {
+    const data = JSON.parse(localStorage.getItem('data'))
+    const item = localStorage.getItem('test-content')
+    console.log(data, item)
+    let content = []
+    for (let key in data) {
+      if (key === item) {
+        content.push(data[key])
+        printToDom(content, 'print-content')
+      }
     }
+  }
 }
 
 // object => loop
@@ -29,17 +29,17 @@ let authCheckAndShowContent = () => {
 // looping on object
 
 let printToDom = (array, flag) => {
-    if (flag === "print-content") {
-        array.map(topic => {
-
-            localStorage.setItem('test-question', JSON.stringify(topic.test))
-            document.getElementById('quizDiv').innerHTML =
-                `
+  if (flag === 'print-content') {
+    array.map(topic => {
+      localStorage.setItem('test-question', JSON.stringify(topic.test))
+      document.getElementById('quizDiv').innerHTML = `
         <h3 class="content" id="title">${topic.title}</h3>
             <p class="content" id="description">
                ${topic.description}
             </p>
-            <code class="container center purple-text grey lighten-2"> ${topic.code}</code>
+            <code class="container center purple-text grey lighten-2"> ${
+              topic.code
+            }</code>
             <div style="margin-left: 70%; margin-top:2%;">
                 <a href="ide.html" class="waves-effect pink waves-light btn"><i class="material-icons right">code</i>Try
                     Yourself</a>
@@ -56,20 +56,19 @@ let printToDom = (array, flag) => {
                    </div>
 
         `
-        })
-    } else if (flag === "test-questions") {
-        console.log('IM here')
-        array.map(topic => {
-            console.log()
-            localStorage.setItem('test-question', JSON.stringify(topic.test))
-            document.getElementById('quizDiv').innerHTML =
-                `
+    })
+  } else if (flag === 'test-questions') {
+    console.log('IM here')
+    array.map(topic => {
+      console.log()
+      localStorage.setItem('test-question', JSON.stringify(topic.test))
+      document.getElementById('quizDiv').innerHTML = `
                 <p class="black-text">${topic.question}</p>
                  <form>
     <p>
       <label>
         <input name="group1" type="radio" checked />
-        <span class="black-text">${topic..options[0]}</span>
+        <span class="black-text">${topic.options[0]}</span>
       </label>
     </p>
     <p>
@@ -92,17 +91,14 @@ let printToDom = (array, flag) => {
     </p>
   </form>
         `
-        })
-    }
-
+    })
+  }
 }
 
 const setTestContent = () => {
-    let testArray = []
-    const test = JSON.parse(localStorage.getItem('test-question'))
-    console.log(test)
-    testArray.push(test)
-    printToDom(testArray, 'test-questions')
-
-
+  let testArray = []
+  const test = JSON.parse(localStorage.getItem('test-question'))
+  console.log(test)
+  testArray.push(test)
+  printToDom(testArray, 'test-questions')
 }
